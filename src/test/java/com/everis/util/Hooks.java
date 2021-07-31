@@ -128,6 +128,7 @@ public class Hooks extends TestWatcher {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", chromePrefs);
+		options.addArguments("--remote-debugging-port=9222");
 		options.addArguments("disable-infobars");
 		options.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
 		

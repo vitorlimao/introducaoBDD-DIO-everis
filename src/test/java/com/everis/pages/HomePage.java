@@ -11,6 +11,8 @@ public class HomePage extends BasePage {
 	@FindBy(css = "#search_query_top")
 	protected WebElement campoBusca;
 	
+	
+
 	@FindBy(name = "submit_search")
 	protected WebElement botaoLupaBuscar;
 	
